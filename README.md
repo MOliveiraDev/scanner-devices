@@ -4,9 +4,9 @@
 
 <img src="https://github.com/MOliveiraDev/scanner-devices/blob/main/scannerdevices-service/assets/ScannerDevices-Diagrama.jpg"></img>
 
-<hr>
-
 ### Projeto utilizando Kotlin para gerenciamento e escaneamento de dispositivos conectados a roteadores.
+
+<hr>
 
 ## Descrição
 

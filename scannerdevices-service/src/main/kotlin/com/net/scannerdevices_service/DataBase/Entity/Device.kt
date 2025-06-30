@@ -1,5 +1,6 @@
 package com.net.scannerdevices_service.DataBase.Entity
 
+import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue
 import jakarta.persistence.Id
@@ -18,9 +19,16 @@ class Device (
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long = 0,
 
+    @Column(name = "ip_address")
     val ip: String,
+
+    @Column(name = "device_name", nullable = true, unique = true)
     val device: String?,
+
+    @Column(name = "connected")
     val connected: Boolean,
+
+    @Column(name = "last_connection")
     val lastConnection: LocalDateTime? = null,
 
     @ManyToOne(fetch = FetchType.LAZY)

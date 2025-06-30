@@ -23,7 +23,6 @@ O `scanner-devices` é uma API REST desenvolvida com Spring Boot que permite lis
 
 - Kotlin
 - Spring Boot (Web, Data JPA)
-- Spring Data JPA
 - Maven
 - MySQL
 

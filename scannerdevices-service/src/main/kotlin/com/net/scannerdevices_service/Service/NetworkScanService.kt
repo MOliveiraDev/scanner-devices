@@ -74,6 +74,7 @@ class NetworkScanService(
             .map {
                 DeviceResult(
                     ip = it.ip,
+                    routerId = it.router.id,
                     device = it.device,
                     connected = it.connected,
                     lastConnection = it.lastConnection

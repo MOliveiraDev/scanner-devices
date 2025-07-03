@@ -1,7 +1,7 @@
 package com.net.scannerdevices_service.DTO
 
 data class ScanRequest(
-    val baseIp: String,           // Ex: "192.168.0"
+    val baseIp: String,
     val ssid: String,
     val protocol: String,
     val securityType: String

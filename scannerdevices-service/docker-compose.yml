@@ -4,13 +4,8 @@ services:
     container_name: scannerdevices-app
     depends_on:
       - db
-    environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/scannerdevicesdb
-      - SPRING_DATASOURCE_USERNAME=oliverdev
-      - SPRING_DATASOURCE_PASSWORD=Luckymydog8080$
-      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
-      - SPRING_JPA_SHOW_SQL=true
-      - SPRING_JPA_PROPERTIES_HIBERNATE_FORMAT_SQL=true
+    env_file:
+      - .env
     ports:
       - "8080:8080"
 
@@ -18,10 +13,10 @@ services:
     image: mysql:8.0
     container_name: scannerdevices-db
     environment:
-      - MYSQL_ROOT_PASSWORD=Luckymydog8080$
+      - MYSQL_ROOT_PASSWORD=scanner123
       - MYSQL_DATABASE=scannerdevicesdb
-      - MYSQL_USER=oliverdev
-      - MYSQL_PASSWORD=Luckymydog8080$
+      - MYSQL_USER=scanner
+      - MYSQL_PASSWORD=scanner123
     ports:
       - "3307:3306"
     volumes:

@@ -78,3 +78,19 @@ Lista os dispositivos conectados ao roteador informado.
 ### `POST /scan-devices`
 
 Scanneia novo dispositivo a um roteador.
+
+
+<hr>
+
+## Como rodar a aplicação
+
+### Requisitos
+- Obter o docker baixado no seu dispositivo
+- Baixar o docker `docker-compose.yml` na pasta raiz do repositório
+
+### Rodar com o Docker
+- Entra na pasta onde baixou o `docker-compose.yml` e vai abrir com o terminal
+- Agora execute com esse comando:
+```sh
+docker-compose up -d
+```

@@ -86,7 +86,8 @@ Scanneia novo dispositivo a um roteador.
 
 ### Requisitos
 - Obter o docker baixado no seu dispositivo
-- Baixar o docker `docker-compose.yml` na pasta raiz do repositório
+- Baixar o `docker-compose.yml` na pasta raiz do repositório [![Download Docker Compose](https://img.shields.io/badge/Baixar%20Docker--Compose-blue?style=for-the-badge&logo=docker)](https://raw.githubusercontent.com/MOliveiraDev/scanner-devices/main/docker-compose.yml)
+
 
 ### Rodar com o Docker
 - Entra na pasta onde baixou o `docker-compose.yml` e vai abrir com o terminal
